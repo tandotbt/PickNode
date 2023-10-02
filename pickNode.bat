@@ -21,7 +21,7 @@ if %errorlevel% equ 2 (set _only=Yes)
 rem Delete %appdata%\Nine Chronicles\config.json
 del /f "%appdata%\Nine Chronicles\config.json"
 rem Download new config.json
-curl https://download.nine-chronicles.com/9c-launcher-config.json --insecure --silent > "%appdata%\Nine Chronicles\config.json"
+curl https://release.nine-chronicles.com/main/config.json --insecure --silent > "%appdata%\Nine Chronicles\config.json"
 
 if not "%_only%" == "Yes" (goto :skip)
 
